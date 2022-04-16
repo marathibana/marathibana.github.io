@@ -1,192 +1,348 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<!doctype html>
+<html ⚡ lang="en-us">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="marathi content website">
+    <meta name="theme-color" content="#208a74">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
 
-/* unvisited link */
-a:link {
-  color: green;
+
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+
+   <!-- amp ads -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-custom>
+    /* Add your styles here */
+body{
+margin:0px;
+padding:0px;
+background-color:#f2f2f2;
 }
 
-/* visited link */
-a:visited {
-  color: navy;
+a:hover{
+color:#33d6b5;
 }
 
-/* mouse over link */
-a:hover {
-  background: green;
-  color: white;
+.headerbar{
+background-color:#33d6b5;
+color:white;
+}
+.headerbar a:hover{
+color:#0f6639;
 }
 
-/* selected link */
-a:active {
-  color: grey;
+.home-button {
+  margin-top: 8px;
 }
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin:0px;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
+.headerbar {
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+.site-name {
+  margin: auto;
+font-weight:bold;
+font-size:25px;
+}
+.site-name-link{
+text-decoration:none;
+color:#fff;
+}
+
+.hamburger {
+  padding-left: 10px;
+font-weight:bold;
+font-size:25px;
+}
+#sidebar1{
+  align-items: center;
+backgroundd: linear-gradient(to bottom, #662d91 0%, #fa6732 100%);
+background: linear-gradient(to bottom, #33d6b5 0%, #208a74 100%);
+background-colorr:#3639e3;
+}
+
+.sidebar {
   padding: 20px;
-}
+  margin: 0;
+  width:auto;
 
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 0px;
-   margin: 15px;
-   margin-top: 10px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.card p {
- font-weight: 300;
-}
-
-
-/* Fake image1 */
-.fakeimg1 {
-  background-color: #aaa;
-  width: 100%;
-  padding: 0px;
-}
-
-.card-details{
-padding: 15px;
-}
-
-.card-title {
-text-decoration: none;
-}
-
-.readmore{
-text-decoration: none;
-background: #ffffff;
-color: #000;
-border: 1px solid grey;
-padding: 10px;
-margin: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #4a4a4a;
-  color: #ababab;
-  margin-top: 20px;
-}
-.footer a{
-text-decoration: none;
-}
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
+  font-weight:600;
+  margin:10px;
+  border:1px solid #fff;
+  border-radius:15px;
   }
+.sidebar > li {
+  list-style: none;
+  margin-bottom:10px;
 }
-</style>
-</head>
-<body>
+.sidebar a {
+  text-decoration: none;
+  color:#fff;
+}
+.sidebar h3{
+color:#fff;
+}
+.close-sidebar {
+  font-size: 1.5em;
+  padding-left: 5px;
+  color:#fff;
+  font-weight:bold;
+}
 
-<div class="header">
-  <h4>HindiMeSujhav</h4>
+.sidebar2 {
+  padding: 20px;
+  width:auto;
+  font-weight:600;
+  margin:10px;
+  border:1px solid #fff;
+  border-radius:15px;
+  }
+.sidebar2 > li {
+  list-style: none;
+  margin-bottom:10px;
+}
+.sidebar2 a {
+  text-decoration: none;
+  color:#fff;
+}
+.sidebar a:hover{
+color:#0f6639;
+}
+.sidebar2 a:hover{
+color:#0f6639;
+}
+
+.footer1{
+background-color:#333333;
+align-items:center;
+text-align:center;
+color:#999999;
+}
+.footer1 p{
+color:#999999;
+}
+.footer-link {
+text-decoration:none;
+color:#999999;
+margin:10px;
+padding:10px;
+line-height:30px;
+font-size:14px;
+font-weight:bold;
+}
+
+.post-thumbnail{
+background-color:#fff;
+margin:10px;
+padding:10px;
+border-radius:15px;
+height:auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post-thumbnail-title{
+text-decoration:none;
+color:#3d3d3d;
+}
+.post-thumbnail-img{
+width:100%;
+border-radius:0px 0px 15px 15px;
+height:auto;
+}
+.ads1{
+backgroundddd-color:#fff;
+width:340px;
+height:340px;
+margin:10px;
+border-radiusssss:15px;
+}
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="canonical" href="https://marathibana.online">
+    <title>MARATHIBANA.ONLINE</title>
+    <link rel="manifest" href="https://marathibana.online/manifest.json">
+  </head>
+
+  <body>
+
+<!-- auto ads rakshak -->
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-2567389909188460">
+</amp-auto-ads>
+
+<header class="headerbar">
+  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+  <div class="site-name"><a class="site-name-link" href="https://marathibana.online">marathibana.online</a></div>
+</header>
+
+<amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+<div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div> <ul class="sidebar">
+<h3>Category</h3>
+<hr/>
+ <li><a href="https://marathibana.online/post/p/contact.html">Contact me</a></li> <li><a href="https://marathibana.online/post/p/disclaimer.html">Disclaimer</a></li> <li><a href="https://marathibana.online/post/p/privacy.html">Privacy Policy</a></li> <li><a href="https://marathibana.online/stories/nature-of-kokan.html">Stories</a></li> </ul>
+
+<!-- ul class=sidebar2>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Privacy</a></li>
+</ul -->
+
+ </amp-sidebar>
+
+    
+<div style="margin-top:50px;">
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <div class="fakeimg1" style="height:200px;">Image</div>
-      <div class="card-details">
-     <a class="card-title" href="#"> <h2>TITLE HEADING</h2></a>
-      <h6>Title description, Dec 7, 2017</h6>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> </div>
-    <a class="readmore" href="#">read more </a><br/><br/>
-    </div>
+</br>
+<!-- post thumbnail start -->
+<div class="post-thumbnail">
 
-    <div class="card">
-      <div class="fakeimg1" style="height:200px;">Image</div>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
+<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html" class="post-thumbnail-title"><h2>How to Register Yono SBI app guide in Marathi</h2> In this article we share about How to Register Yono SBI app guide in Marathi</a>
+
+<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html">
+  <amp-img
+    src="https://marathibana.online/img/yono-sbi.jpeg"
+    width="auto"
+    height="200"
+  ></amp-img></a>
+</div>
+<br/>
+<!-- post thumbnail end -->
+<br/>
+
+<!-- post thumbnail start -->
+<div class="post-thumbnail">
+
+<a href="https://marathibana.online/2021/04/09/searchview-and-download-digital-7-12-utara.html" class="post-thumbnail-title"><h2>Search,View and Download Digital 7/12 Utara | शोधा आणि डाऊनलोड करा डिजिटल सातबारा उतारा</h2> In this article we share about how to download/view 7/12 Utara in Maharashtra</a>
+
+<a href="https://marathibana.online/2021/04/09/searchview-and-download-digital-7-12-utara.html">
+  <amp-img
+    src="https://marathibana.online/img/7-12-utara1.png"
+    width="auto"
+    height="200"
+  ></amp-img></a>
+</div>
+<br/>
+<!-- post thumbnail end -->
+<br/>
+
+
+<!-- post thumbnail start -->
+<div class="post-thumbnail">
+
+<a href="https://marathibana.online/sesame-chutney-recipe-in-marathi.html" class="post-thumbnail-title"><h2>Sesame chutney recipe in marathi</h2> In this article we share recipe of sesame chutney</a>
+
+<a href="https://marathibana.online/sesame-chutney-recipe-in-marathi.html"><img class="post-thumbnail-img" src="https://github.com/rakshak53/rakshak53.github.io/raw/main/demo.png"/></a>
+</div>
+<br/>
+<!-- post thumbnail end -->
+<br/>
+
+<!-- amp ad unit -->
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-2567389909188460" data-ad-slot="1935372938" data-auto-format="rspv" data-full-width=""> <div overflow=""></div> </amp-ad>
+
+
+<!-- post thumbnail start -->
+<div class="post-thumbnail">
+
+<a href="https://rakshak53.github.io" class="post-thumbnail-title"><h2>How to make a href link h2 img src and friends and family members with a href</h2> In this article sample you understand how to make the href linkssss</a>
+
+<a href="https://rakshak53.github.io"><img class="post-thumbnail-img" src="https://github.com/rakshak53/rakshak53.github.io/raw/main/demo.png"/></a>
+</div>
+<br/>
+<!-- post thumbnail end -->
+
+
+<br/>
+
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-2567389909188460"
+     data-ad-slot="9005453400"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+
+<!-- post thumbnail start -->
+<div class="post-thumbnail">
+
+<a href="https://rakshak53.github.io" class="post-thumbnail-title"><h2>How to make a href link h2 img src and friends and family members with a href</h2> In this article sample you understand how to make the href linkssss</a>
+
+<a href="https://rakshak53.github.io"><img class="post-thumbnail-img" src="https://github.com/rakshak53/rakshak53.github.io/raw/main/demo.png"/></a>
+</div>
+<!-- post thumbnail end -->
+
+
+<br/>
+<hr/>
+<br/>
+
+
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-2567389909188460"
+     data-ad-slot="5257780084"
+     data-auto-format="mcrspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+
+
+<div class="footer1">
+
+<div>
+<a class="footer-link" href="https://marathibana.online/post/p/about-us.html">ABOUT US</a>
+<a class="footer-link" href="https://marathibana.online/post/p/disclaimer.html">DISCLAIMER</a>
+<a class="footer-link" href="https://marathibana.online/post/p/privacy.html">PRIVACY POLICY</a>
+<a class="footer-link" href="https://marathibana.online/post/p/terms.html">TERMS AND CONDITIONS</a>
+<a class="footer-link" href="https://marathibana.online/">HOME</a>
+
+
+</div>
+<br/>
+<div> This Blog 'Design' is completely created from scratch & ofcourse this is a static website. I'm still learning HTML and CSS. </div>
+
+<p>Copyright 2022</p>
+
 </div>
 
-<div class="footer">
-  <div><h2>COPYRIGHT 2021-2022 HindiMeSujhav.In</h2></div>
-  <div>
-  <a href="#">Home</a>
-  <a href="#">Contact Us</a>
-  <a href="#">Disclaimer</a>
-  <a href="#">Terms of Use</a>
-  <a href="#">Privacy Policy</a>
 
-</div>
-  
-</div>
 
-</body>
+
+    <amp-install-serviceworker src="/sw.js"
+                               data-iframe-src="install-sw.html"
+                               layout="nodisplay">
+    </amp-install-serviceworker>
+    <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-178406997-2",
+        "config" : {
+          "UA-178406997-2": {
+            "groups": "default"
+          }
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+  </body>
 </html>
