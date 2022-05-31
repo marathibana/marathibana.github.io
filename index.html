@@ -1,535 +1,229 @@
-<!doctype html>
-<html ⚡ lang="en-us">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="marathi content website">
-    <meta name="theme-color" content="#00508a">
-    <title>मराठीबाणा.ऑनलाईन</title>
-    <link rel="canonical" href="https://marathibana.online">
-    <link rel="manifest" href="https://marathibana.online/manifest.json">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://marathibana.online/logo/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://marathibana.online/logo/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://marathibana.online/logo/apple-touch-icon.png">
-    <link rel="icon" sizes="180x180" href="https://marathibana.online/logo/apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="https://marathibana.online/logo/android-chrome-192x192.png">
-    <link rel="icon" sizes="512x512" href="https://marathibana.online/logo/android-chrome-512x512.png">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Hamburger Navbar</title>
 
-    <meta property="og:image" content="https://marathibana.online/logo/android-chrome-512x512.png" />
-    <meta property="og:site_name" content="मराठीबाणा.ऑनलाईन" />
-
-<!--  og meta tags -->
-
-
-    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!-- Import other AMP Extensions here -->
-
-
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-
-   <!-- amp ads -->
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-
-
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-
-    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <style amp-custom>
-    /* Add your styles here */
-*{margin:0;
+</head>
+<style>
+*{
+background-color:#f1f1f1;
+margin:0;
 padding:0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-body{margin:0;
-padding:0;
-background-color:#f2f2f2;
-}
-
-a:hover{
-color:#046bb5;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.headerbar{
-background-color:#046bb5;
-color:white;
-}
-.headerbar a:hover{
-color:#0f6639;
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
-.home-button {
-  margin-top: 8px;
+li {
+    list-style: none;
 }
-.headerbar {
-  height: 50px;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
+
+a {
+    text-decoration: none;
 }
-.site-name {
-  margin: auto;
-font-weight:bold;
-font-size:25px;
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
 }
-.site-name-link{
-text-decoration:none;
-color:#fff;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 
 .hamburger {
-  padding-left: 10px;
-font-weight:bold;
-font-size:25px;
-}
-#sidebar1{
-  align-items: center;
-backgroundd: linear-gradient(to bottom, #662d91 0%, #fa6732 100%);
-background: linear-gradient(to bottom, #046bb5 0%, #00508a 100%);
-background-colorr:#3639e3;
+    display: none;
 }
 
-.sidebar {
-  padding: 20px;
-  margin: 0;
-  width:auto;
-  font-weight:600;
-  margin:10px;
-  border:1px solid #fff;
-  border-radius:15px;
-  }
-.sidebar > li {
-  list-style: none;
-  margin-bottom:10px;
-}
-.sidebar a {
-  text-decoration: none;
-  color:#fff;
-}
-.sidebar h3{
-color:#fff;
-}
-.close-sidebar {
-  font-size: 1.5em;
-  padding-left: 5px;
-  color:#fff;
-  font-weight:bold;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
-.sidebar a:hover{
-color:#0f6639;
-}
-
-.footer1{
-background-color:#333333;
-align-items:center;
-text-align:center;
-color:#999999;
-}
-.footer1 p{
-color:#999999;
-}
-.footer-link {
-text-decoration:none;
-color:#999999;
-margin:10px;
-padding:10px;
-line-height:30px;
-font-size:14px;
-font-weight:bold;
-}
-
-.post-thumbnail{
-background-color:#fff;
-margin:10px;
-padding:10px;
-border-radius:15px;
-height:auto;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.post-thumbnail h2{
-margin-bottom:10px;
-}
-
-.date{
-font-size:12px;
-font-weight:500;
-}
-
-.post-thumbnail a, p{
-text-decoration:none;
-color:#3d3d3d;
-}
-.post-thumbnail p{
-margin-top:10px;
-margin-bottom:10px;
-}
-.post-thumbnail p:last-child{
-margin-top:10px;
-}
-.read-button{
-padding:5px 10px 5px 10px;
-background-color:#046bb5;
-color:#fff;
-border-radius:15px;
-floatt:left;
-}
-
-
-.post-thumbnail-title{
-text-decoration:none;
-color:#3d3d3d;
-}
-.post-thumbnail-img{
-width:100%;
-border-radius:0px 0px 15px 15px;
-height:auto;
-}
-
-
-
-.right-side-container{
-background-color:#046bb5;
-color:#fff;
-margin:10px;
-padding:10px;
-border-radius:15px;
-height:auto;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.right-side-container li{
-font-size:20px;
-font-weight:500;
-font-color:#fff;
-list-style: none;
-margin-top:20px;
-}
-
-.right-side-container a{
-font-size:20px;
-font-weight:500;
-color:#fff;
-}
-.right-side-container a:hover{
-color:maroon;
-}
-.right-side-container-title{
-font-size: 30px;
-text-decoration:none;
-color:#fff;
-}
-.right-side-container-img{
-width:100%;
-border-radius:0px 0px 15px 15px;
-height:auto;
-}
-
-.ads1{
-backgroundddd-color:#fff;
-width:340px;
-height:340px;
-margin:10px;
-border-radiusssss:15px;
-}
-
-@media only screen and (min-width: 600px) {
-  .container{
+.nav-menu {
     display: flex;
-  }
-  .left-side{
-   width:70%;
-}
-  .right-side{
-   width:30%;
-}
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-    </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-  </head>
-
-  <body>
-
-<!-- auto ads rakshak -->
-
-<header class="headerbar">
-  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
-  <div class="site-name"><a class="site-name-link" href="https://marathibana.online">marathibana.online</a></div>
-</header>
-
-<amp-sidebar id="sidebar1" layout="nodisplay" side="left">
-<div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div> <ul class="sidebar">
-<h3>About</h3>
-<hr/>
- <li><a href="https://marathibana.online/post/p/contact.html">Contact me</a></li> <li><a href="https://marathibana.online/post/p/disclaimer.html">Disclaimer</a></li> <li><a href="https://marathibana.online/post/p/privacy.html">Privacy Policy</a></li> <li><a href="https://marathibana.online/stories/web-stories-list.html">Web Stories</a></li> </ul>
-
-<ul class=sidebar>
-<h3>Category</h3>
-<hr/>
-<li><a href="https://marathibana.online/recipes-index.html">Recipes</a></li>
-<li><a href="https://marathibana.online/stories/web-stories-list.html">Web Stories</a></li>
-</ul>
-
- </amp-sidebar>
-
-    
-<div style="margin-top:50px;">
-</div>
-
-<!-- floating from here -->
-</br>
-<!-- post thumbnail start -->
-
-<div class="container">
-
-
-
-<!-- left-side start  -->
-<div class="left-side">
-
-
-<div class="post-thumbnail">
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html" class="post-thumbnail-title"><h2>How to Register Yono SBI app guide in Marathi</h2> </a>
-<p>
-<span class="date">May 22, 2022</span></p>
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html">
-  <amp-img
-    src="https://marathibana.online/img/marathitrends.jpg"
-    width="auto"
-    height="200"
-  ></amp-img>
-<p>
-In this article we share about How to Register Yono SBI app guide in Marathi</p>
-<p>
-<span class="read-button">read more</span></p>
-</a>
-
-
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-<div class="post-thumbnail">
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html" class="post-thumbnail-title"><h2>How to Register Yono SBI app guide in Marathi</h2> </a>
-<p>
-<span class="date">May 22, 2022</span></p>
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html">
-  <amp-img
-    src="https://marathibana.online/img/marathitrends.jpg"
-    width="auto"
-    height="200"
-  ></amp-img>
-<p>
-In this article we share about How to Register Yono SBI app guide in Marathi</p>
-<p>
-<span class="read-button">read more</span></p>
-</a>
-
-
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-<div class="post-thumbnail">
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html" class="post-thumbnail-title"><h2>How to Register Yono SBI app guide in Marathi</h2> </a>
-<p>
-<span class="date">May 22, 2022</span></p>
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html">
-  <amp-img
-    src="https://marathibana.online/img/marathitrends.jpg"
-    width="auto"
-    height="200"
-  ></amp-img>
-<p>
-In this article we share about How to Register Yono SBI app guide in Marathi</p>
-<p>
-<span class="read-button">read more</span></p>
-</a>
-
-
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-
-<div class="post-thumbnail">
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html" class="post-thumbnail-title"><h2>How to Register Yono SBI app guide in Marathi</h2> </a>
-<p>
-<span class="date">May 22, 2022</span></p>
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html">
-  <amp-img
-    src="https://marathibana.online/img/marathitrends.jpg"
-    width="auto"
-    height="200"
-  ></amp-img>
-<p>
-In this article we share about How to Register Yono SBI app guide in Marathi</p>
-<p>
-<span class="read-button">read more</span></p>
-</a>
-
-
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-
-<div class="post-thumbnail">
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html" class="post-thumbnail-title"><h2>How to Register Yono SBI app guide in Marathi</h2> </a>
-<p>
-<span class="date">May 22, 2022</span></p>
-
-<a href="https://marathibana.online/amp/how-to-register-yono-sbi-app-guide-in-marathi.html">
-  <amp-img
-    src="https://marathibana.online/img/marathitrends.jpg"
-    width="auto"
-    height="200"
-  ></amp-img>
-<p>
-In this article we share about How to Register Yono SBI app guide in Marathi</p>
-<p>
-<span class="read-button">read more</span></p>
-</a>
-
-
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-
-</div>
-<!-- left-side end ^ -->
-
-
-
-
-<!-- right-side start  -->
-<div class="right-side">
-
-
-
-<!-- post thumbnail start -->
-<div class="right-side-container">
-
-<h2 class="right-side-container-title"> Recent Posts</h2>
-
-<li><a href="#">Link 1</a></li>
-<li><a href="#">Link 2</a></li>
-<li><a href="#">Link 3</a></li>
-<li><a href="#">Link 4</a></li>
-<li><a href="#">Link 5</a></li>
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-
-
-<!-- post thumbnail start -->
-<div class="right-side-container">
-
-
-<h2 class="right-side-container-title"> Recent Posts</h2>
-
-
-<a href="https://marathibana.online/2021/04/09/searchview-and-download-digital-7-12-utara.html">
-  <amp-img
-    src="https://marathibana.online/img/7-12-utara1.png"
-    width="auto"
-    height="200"
-  ></amp-img></a>
-</div>
-<br/>
-<!-- post thumbnail end -->
-<br/>
-
-
-
-
-
-
-
-</div>
-
-<!-- right-side end ^ -->
-
-
-
-
-
-
-
-
-<!-- post container end -->
-</div>
-
-
-
-<br/>
-<hr/>
-<br/>
-
-
-<div class="footer1">
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+</style>
+<body>
+<!-- comments plugin -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=1168586930602249&autoLogAppEvents=1" nonce="zAVp1Yjk"></script>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=1168586930602249&autoLogAppEvents=1" nonce="iaBiZh6m"></script>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">WebDev.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
 <div>
-<a class="footer-link" href="https://marathibana.online/post/p/about-us.html">ABOUT US</a>
-<a class="footer-link" href="https://marathibana.online/post/p/disclaimer.html">DISCLAIMER</a>
-<a class="footer-link" href="https://marathibana.online/post/p/privacy.html">PRIVACY POLICY</a>
-<a class="footer-link" href="https://marathibana.online/post/p/terms.html">TERMS AND CONDITIONS</a>
-<a class="footer-link" href="https://marathibana.online/">HOME</a>
+<div class="post">
+<p>
+<h2>This is The Best Heading Title</h2>
+</p>
+<p>
 
+<script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-share-url="https://telegram.org" data-size="large"></script>
+
+<div class="fb-share-button" data-href="https://marathitrends.in/amp/template.html" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmarathitrends.in%2Famp%2Ftemplate.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+
+
+
+
+
+
+
+</p>
+
+<p>
+Lorrem ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium PM to make your family are not working in Marathi p id p2 to make 33
+</p>
+
+<p>
+Lorrem ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium ipsum lorrium PM to make your family are not working in Marathi p id p2 to make 33
+</p>
+
+<div class="page-like">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=1168586930602249&autoLogAppEvents=1" nonce="pve8Lt1B"></script>
+
+<div class="fb-like" data-href="https://marathitrends.in" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="false"></div>
 
 </div>
-<br/>
-<div> This is completely a static blog/website. Base on HTML and CSS ,JS.</div>
+<!-- page like end -->
 
-<p>Blog Mainten by rakshak</p>
-
+<div class="fb-comments" data-href="https://marathitrends.in/amp/template.html" data-width="" data-numposts="99"></div>
 </div>
 
+</div>
+</body>
 
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
 
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-    <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-    {
-      "vars" : {
-        "gtag_id": "UA-178406997-2",
-        "config" : {
-          "UA-178406997-2": {
-            "groups": "default"
-          }
-        }
-      }
-    }
-    </script>
-    </amp-analytics>
-  </body>
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+</script>
 </html>
